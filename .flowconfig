@@ -58,8 +58,4 @@ suppress_comment=\\(.\\|\n\\)*\\$FlowExpectedError
 unsafe.enable_getters_and_setters=true
 
 [version]
-<<<<<<< ours
-^0.49.1
-=======
 ^0.86.0
->>>>>>> theirs

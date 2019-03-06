@@ -24,8 +24,13 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
-            new GoogleFitPackage(BuildConfig.APPLICATION_ID)
+          new GoogleFitPackage(BuildConfig.APPLICATION_ID)
       );
+    }
+
+    @Override
+    protected String getJSMainModuleName() {
+      return "index";
     }
   };
 
