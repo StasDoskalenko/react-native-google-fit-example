@@ -11,12 +11,18 @@ import {
     Text,
     View
 } from 'react-native';
-import GoogleFit from 'react-native-google-fit';
+import GoogleFit, { Scopes } from 'react-native-google-fit';
 
 
 export default class googleFitExample extends Component {
     componentDidMount() {
-      GoogleFit.authorize()
+      const options = {
+        scopes: [
+          Scopes.FITNESS_ACTIVITY_READ_WRITE,
+          Scopes.FITNESS_BODY_READ_WRITE,
+        ],
+      }
+      GoogleFit.authorize(options)
         .then((res) => {
           console.log('authorized >>>', res)
         })

@@ -9,7 +9,7 @@
 	"dependencies": {
 		"react": "16.8.4",
 		"react-native": "0.58.6",
-		"react-native-google-fit": "0.9.9"
+		"react-native-google-fit": "^0.9.10-beta"
 	},
 	"devDependencies": {
 		"@babel/core": "7.3.4",
